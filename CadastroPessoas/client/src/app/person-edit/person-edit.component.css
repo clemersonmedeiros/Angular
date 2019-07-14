@@ -1,0 +1,57 @@
+
+.person-center{
+    width: 80%;
+    
+    margin:auto;
+}
+.person-center p{
+    color: #666;
+
+}
+.image-form{
+    max-width: 10%;
+    transition: none !important;
+    box-shadow: none !important;
+}
+.image-form img{    
+    border-radius: 5px;
+}
+.person-center div{
+    border-radius: 5px;
+    padding: 5px 15px;
+    width: 100%;
+}
+
+.drop-box {
+  cursor: pointer;
+  background: #F8F8F8;
+  border: 5px dashed #DDD;
+  text-align: center;
+  padding: 40px;
+}
+button{
+    margin-right: 10px;
+}
+.drag-over-title {
+  display: none;
+}
+ 
+.drop-box.dragover {
+  opacity: 0.6;
+}
+ 
+.drop-box.dragover .drag-over-title {
+  display: block;
+}
+ 
+.drop-box.dragover .drag-in-title {
+  display: none;
+}
+ 
+input[type='file'] {
+  display: none;
+}
+
+.email-form-field{
+    min-width: 250px;
+}

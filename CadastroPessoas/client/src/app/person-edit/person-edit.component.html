@@ -1,0 +1,34 @@
+
+<div class='person-center'>
+  <div class="mat-elevation-z9">
+    <form (ngSubmit)="save()" [formGroup]='ngFormControll'>
+      <input type="hidden" name="href" formControlName ="href">
+        <mat-card-header> 
+          <mat-card-subtitle><h2>{{ngFormControll.value.id > 0 ? 'Editar' : 'Adicionar'}} Pessoa</h2></mat-card-subtitle>
+        </mat-card-header>
+        <mat-divider></mat-divider>
+        <div>
+          <mat-form-field>
+            <input [maxlength]='150' type='text' matInput placeholder="Nome" required name="name" formControlName ="name" required>
+          </mat-form-field>
+          <mat-form-field>
+            <input [maxlength]='14' matInput placeholder="CPF"  mask='000.000.000-00'  required name="cpf" formControlName ="cpf">
+          </mat-form-field>
+          <mat-form-field class='email-form-field'>
+            <input [maxlength]='400' type='email' matInput placeholder="E-mail" required name="email" formControlName ="email">
+          </mat-form-field>
+          <mat-form-field>
+              <input matInput [matDatepicker]="picker" [matDatepickerFilter]="blockDate" placeholder="Data Nasc." [formControl]="birthDateFilter">
+              <mat-datepicker-toggle matSuffix [for]="picker" ></mat-datepicker-toggle>
+              <mat-datepicker #picker startView="multi-year"></mat-datepicker>
+          </mat-form-field>
+          <div>
+            <mat-card-actions>
+              <button [disabled]="!ngFormControll.valid" mat-raised-button color="primary" type="submit"> Salvar</button>
+              <button mat-raised-button routerLink="/person-list">Cancelar</button>
+            </mat-card-actions>
+          </div>
+        </div>
+    </form>
+  </div>
+</div>

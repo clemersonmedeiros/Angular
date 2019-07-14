@@ -1,0 +1,57 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import 'https://fonts.googleapis.com/icon?family=Material+Icons';
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+body {
+  margin: 0;
+  font-family: Roboto, sans-serif;
+}
+
+.basic-container {
+    padding: 30px;
+}
+mat-form-field{
+    margin-right: 30px;
+}
+.version-info {
+    font-size: 8pt;
+    float: right;
+}
+  
+th.mat-sort-header-sorted {
+    color: black;
+}
+.mat-table__wrapper .mat-table {
+    min-width: auto !important;
+    width: 100% !important;
+}
+.list-person{
+    width: 80%;
+    margin:auto;
+}
+.list-person p{
+    color: #666;
+
+}
+.list-person table{
+    width: 100%;
+}
+
+.mat-header-row {
+    width: 100%;
+}
+.mat-icon{
+   color :#673ab7; 
+}
+.mat-row {
+    width: 100%;
+}
+.mat-column-actions{
+    word-wrap: break-word !important;
+    white-space: unset !important;
+    flex: 0 0 10% !important;
+    width: 15% !important;
+}
+mat-divider{
+    padding-bottom: 15px;
+}
