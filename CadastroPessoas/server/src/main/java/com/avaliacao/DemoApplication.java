@@ -47,6 +47,8 @@ public class DemoApplication {
     ApplicationRunner init(PersonRepository repository) {
         
         return args -> {
+            System.out.println("----------------");
+            System.out.println("O servidor está executando!");
             //repository.findAll().forEach(System.out::println); // Print todos as pessoas
         };
     }
